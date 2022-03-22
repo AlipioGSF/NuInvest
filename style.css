@@ -1,0 +1,429 @@
+
+@font-face {
+        font-family: 'Graphik';
+        src: url(Graphik-Font-Family/GraphikMedium.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Graphik", sans-serif;
+    list-style: none;
+}
+body{
+    overflow-x: hidden; 
+}
+
+a{
+    display: flex;
+    align-items: center;
+}
+a img{
+    width: 1.1em;
+    margin-left: 0.5em;
+}
+button img{
+    width: 1.1em;
+    color: white;
+}
+
+.navBar{
+    background: white;
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 1px rgba(163, 162, 162, 0.445);
+    font-size: 1em;
+}
+
+.opNavbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2em;
+    gap: 1vw;
+}
+
+.opNavbar a{
+    color:#000000;
+}
+
+
+#logo{
+    margin: 0 2.5em;
+    background-image: url(imagens/LogoNuInvest.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 88%;
+    width: 9em;
+    height: 3em;
+}
+
+/*-----------------------NÃO MEXER EM HIPOTESE ALGUMA---------------------------------------*/
+.opInvestimentos{
+display: none;
+position: absolute;
+left: 0;
+background-color: #ffffff;
+width: 100vw;
+margin: 1.5em 0;
+position: absolute;
+justify-content: space-around;
+height: 53vh;
+}
+.dropdown{
+    padding: 1.5em 0;
+}
+
+.dropdown img{
+    height: 0.6em;
+    margin-left: 0.2em;
+}
+
+.dropdown:hover .opInvestimentos{
+    display: flex;
+    margin: 1.5em 0;
+}
+.dropdown:hover .opNavbar{
+    border-bottom: 13px solid white;
+}
+#up{
+    display:none;
+}
+.dropdown:hover #up{
+    display: contents;
+}
+.dropdown:hover #down{
+    display: none;
+}
+.opInvestimentos h3{
+    font-size: 0.6em;
+}
+.opInvestimentos ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 1.1em;
+    height: 100%;
+
+}
+.opInvestimentos li{
+    font-size: 1.2em;
+    margin-bottom: 0.65em;
+}
+
+.colunaInv h3{
+    font-size: 1em;
+    font-weight: 200;
+    font-family: 'GraphikRegular';
+}
+.colunaInv{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 2em 0;
+}
+
+.Ftrader ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/*---------------------^^^^^^^^^^^^^^^^^^^^^------------------------*/
+
+/*-----------------------REGISTRO E LOGIIN--------------------------*/
+.reglog{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.reglog button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.reglog button:nth-child(1){
+    padding: 0 1em;
+    color: #7625c9;
+    width: 240px;
+}
+.reglog button:nth-child(1) div{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.reglog button:nth-child(1):hover{
+    background-color: #7a25c91e;
+}
+
+.reglog button:nth-child(2){
+    margin-right: 10px;
+    background: #7625c9;
+    color: #ffffff;
+    width: 140px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.reglog button:nth-child(2):hover{
+    background-color: #4c0677;
+}
+
+.reglog button:nth-child(2) div{
+    display: flex;
+    margin-right: 2em;
+    margin-left: 1.5em;
+    width: 4.5vw;
+    justify-content: space-between;
+}
+
+
+/*------------------NÃO MEXER ALÉM DAQUI---------------------------*/
+header{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://images.unsplash.com/photo-1559521783-1d1599583485?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: flex-end;
+}
+.headerposition{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 42%;
+    margin-right: 3em;
+    justify-content: center;
+}
+
+.headerposition h1{
+    color: #ffffff;
+    font-size: 4.4em;
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+
+.headerposition h2{
+    color:#ffffff;
+    font-size: 1.8em;
+    font-weight: 200;
+}
+
+.headerposition a{
+    margin-top: 3em;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+/*------------------NÃO MEXER DAQUI PRA CIMA--------------------------------*/
+section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrumar{
+    display: flex;
+    width: 78vw;
+    height: 70vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrumarA{
+    display: flex;
+    width: 70vw;
+    height: 70vh;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.arrumar img, .arrumarA img{
+    height: 83%;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 50%;
+}
+
+.text h1{
+    font-size: 3.2em;
+    color: #000000;
+    line-height: 1.2em;
+    font-weight: 400;
+    
+}
+
+.text h2{
+    margin: 1.5em 0 0.5em 0;
+    font-weight: 100;
+}
+
+.text b{
+    color: #7A25C9;
+    font-weight: 500;
+}
+
+.text a{
+    color:#7625c9;
+    font-size: 1.2em;
+    margin-top: 1.5em;
+}
+/*-------------------- Sections---------------------*/
+
+#Opoder{
+    background-size: 100%;
+    background-image: url(imagens/poder.jpeg);
+}
+#Opoder .text h1, #Opoder .text a{
+    color: #ffffff;
+}
+
+#Ultravioleta{
+    background-color: #F4F4F4;
+}
+
+#Carteiras .arrumarA{
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+#Carteiras .text{
+    width: 50%;
+}
+#Carteiras .text h2{
+    line-height: 1.5em;
+}
+
+
+#Plataformas .text{
+    width: 47%;
+}
+#Plataformas .arrumar{
+    justify-content: flex-start;
+}
+#InvestNews{
+    background: #451372;
+}
+#InvestNews .text h1,#InvestNews .text a{
+    color: #ffffff;
+    margin: 0.6em 0;
+    font-weight: 100;
+}
+
+/*----------------------Mil Opçoes-----------------------*/
+#Mil{
+    flex-direction: column;
+    width: 100vw;
+}
+#Mil .arrumar{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+}
+
+#Mil .text{
+    width: 100%;
+}
+
+.carrossel{
+    width: 100%;
+    height:60%;
+    overflow-x: scroll;
+    overflow: hidden;
+    margin-bottom: 2em;
+    display: flex;
+}
+
+
+.roleta{
+    display: flex;
+    width: 200%;
+}
+.opRoleta{
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    width: 22vw;
+    height: 26vh;
+    margin-right: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.2em 0 1.2em 1.2em;
+}
+
+.opRoleta h1{
+    font-size: 1.7em;
+    font-weight: 100;
+}
+.opRoleta h2{
+    font-family: "MegaFon Graphik LC Web Lgt",sans-serif;
+    font-weight: 600;
+    font-size: 1.3em;
+    color: #6b6b6b;
+    margin-top: 1.2em;
+}
+.opRoleta a{
+    color: #7A25C9;
+}
+
+
+.setas{
+    background: none;
+    width: 8em;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.setas button img{
+    width: 1.3em;
+    height: 1.3em;
+}
+
+.setas button{
+    background: none;;
+    border: none;
+    padding: 1.2em;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.setas button:hover{
+    background: #7725c918;
+}
+
+.setas button:active{
+
+}
+
+/*--- TENTANTO FAZER FUNCIONAR ---*/
+/* AJUSTE DE IMAGEM*/
+#cell{
+    height: 85%;
+    margin-right: 10em;
+}
+#notebook{
+    margin-left: 1.2em;
+    height:50%;
+}
+#news{
+    height: 9%;
+}
