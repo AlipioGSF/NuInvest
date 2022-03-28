@@ -1,8 +1,11 @@
-//const r = [document.querySelector('.roleta.value')];
 const r =['<div class="txtOpInv"><h1>Ações</h1><h2>Seja sócio de empresas</h2></div><a href="#" class="txta"><div class="aTextImg">Saiba mais<img src="imagens/ArrowPurple.svg" alt=""></div><hr></a>','<div class="txtOpInv"><h1>Fll</h1><h2>Receba aluguéis de empreendimentos.</h2></div><a href="#" class="txta"><div class="aTextImg">Saiba mais<img src="imagens/ArrowPurple.svg" alt=""></div><hr></a>', '<div class="txtOpInv"><h1>ETF</h1><h2>Invista em várias ações.</h2></div><a href="#" class="txta"><div class="aTextImg">Saiba mais<img src="imagens/ArrowPurple.svg" alt=""></div><hr></a>', '<div class="txtOpInv"><h1>CDB</h1><h2>Empreste dinheiro para bancos.</h2></div><a href="#" class="txta"><div class="aTextImg">Saiba mais<img src="imagens/ArrowPurple.svg" alt=""></div><hr></a>','<div class="txtOpInv"><h1>Fundos de Investimentos</h1><h2>Um especialista cuida para você.</h2></div><a href="#" class="txta"><div class="aTextImg">Saiba mais<img src="imagens/ArrowPurple.svg" alt=""></div><hr></a>', '<div class="txtOpInv"><h1>BDR</h1><h2>Invista em empresas do exterior.</h2></div><a href="#" class="txta"><div class="aTextImg">Saiba mais<img src="imagens/ArrowPurple.svg" alt=""></div><hr></a>', '<div class="txtOpInv"><h1>Tesouro Direto</h1><h2>Um especialista cuida para você.</h2></div><a href="#" class="txta"><div class="aTextImg">Saiba mais<img src="imagens/ArrowPurple.svg" alt=""></div><hr></a>'];
 const slot = [document.querySelector('#slot1'),document.querySelector('#slot2'),document.querySelector('#slot3'),document.querySelector('#slot4'),document.querySelector('#slot5'),document.querySelector('#slot6'),document.querySelector('#slot7')]
 let controle = 0;
 const opRoleta = document.getElementsByClassName("opRoleta");
+
+
+
+
 
 function roleta(direcao){
     
@@ -85,5 +88,35 @@ function roleta(direcao){
             slot[6].innerHTML=r[5];
             break
     }    
-    console.log(controle);
+}
+
+function menudrop(){
+    const menu = document.querySelector('.menulist');
+    const body = document.querySelector('#body');
+
+    const menubutton = document.querySelector('#menu');
+
+
+    if(menu.style.display == 'none'){
+        menubutton.style.backgroundImage = 'url(imagens/clear_black_24dp.svg)';
+        body.style.overflowY = 'hidden';
+        menu.style.display = 'block';
+        menubutton.style.backgroundColor = '#7725c918'
+    }else{
+        menubutton.style.backgroundColor = 'transparent'
+        menubutton.style.backgroundImage = 'url(imagens/menu_purple_24dp.svg)';
+        body.style.overflowY = 'visible';
+        menu.style.display = 'none';
+    }
+}
+
+
+function menuInvest(){
+    const dropInvest = document.querySelector("#dropInvest");
+    
+    if(dropInvest.style.display == 'none'){
+        dropInvest.style.display = 'block';
+    }else{
+        dropInvest.style.display = 'none';
+    }
 }

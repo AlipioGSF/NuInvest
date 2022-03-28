@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <title>Nu Invest</title>
 </head>
-<body>
+<body id="body">
     <nav class="navBar">
         <ul class="opNavbar">
-            <a href="imagens/LogoNuInvest.svg" id="logo"></a>
+            <a href="" id="logo"></a>
             <li><a href="#">Comece a investir</a></li>
             <li><a href="#">Simulador</a></li>
-            <li class="dropdown">Investimentos <img src="imagens/" alt=""><span id="down"><img src="imagens/angle-arrow-down_icon-icons.com_73683.svg" alt=""></span><span id="up"><img src="imagens/up-arrow_icon-icons.com_73351.svg" alt=""></span>
+            <li class="dropdown"><span id="down">Investimentos<img src="imagens/angle-arrow-down_icon-icons.com_73683.svg" alt=""></span><span id="up">Investimentos<img src="imagens/up-arrow_icon-icons.com_73351.svg" alt=""></span> 
                 <div class="opInvestimentos">
                     <div class="colunaInv">
                         <h3>Renda Fixa</h3>
@@ -65,12 +65,72 @@
             <li><a href="#">InvestNews</a></li>
         </ul>
         <div class="reglog">
-            <button onclick="hey()"><div>Quero ser NuInvest <img src="imagens/ArrowPurple.svg" alt=""></div></button>
-            <button onclick="hey()"><div>Login <img src="imagens/arrow-right-to-bracket-solid.svg" alt=""></div></button>
+            <button><div>Quero ser NuInvest <img src="imagens/ArrowPurple.svg" alt=""></div></button>
+            <button><div>Login <img src="imagens/arrow-right-to-bracket-solid.svg" alt=""></div></button>
         </div>
+        <button id="menu" onclick="menudrop()"></button>
     </nav>
     <main>
-
+        <section class="menulist">
+            <ul class="localList">
+                <li><a href="#">Login <img src="imagens/loginiconblack.svg" alt=""></a></li>
+                <li><a href="">Quero ser NuInvest <img src="imagens/arrow_forward_black_24dp.svg" alt=""></a></li>
+                <li><a href="">Comece a investir</a></li>
+                <li><a href="">Simulador</a></li>
+                <li class="dropmenu"><button  onclick="menuInvest()">
+                    <div id="investimentos">Investimentos<span id="down"><img src="imagens/angle-arrow-down_icon-icons.com_73683.svg" alt=""></span><span id="up"><img src="imagens/up-arrow_icon-icons.com_73351.svg" alt=""></span></div>
+                </button>
+                 <div id="dropInvest">
+                    <div class="listInvest">    
+                        <ul>
+                            <h3>Renda Fixa</h3>
+                            <li><div><a href="#">Tesouro Direto</a></div></li>
+                            <li><div><a href="#">CDB e LC</a></div></li>
+                            <li><div><a href="#">CRI e CRA</a></div></li>
+                            <li><div><a href="#">LCI e LCA</a></div></li>
+                            <li><div><a href="#">Debêntures</a></div></li>
+                            <li><div><a href="#">Letra Financeira</a></div></li>
+                            <li><div><a href="#">Títulos Publicos</a></div></li>
+                        </ul>
+                    </div>
+                    <div class="listInvest">
+                        <ul>
+                            <h3>Renda Variável</h3>
+                            <li><div><a href="#">Ações</a></div></li>
+                            <li><div><a href="#">BDR</a></div></li>
+                            <li><div><a href="#">Fll</a></div></li>
+                            <li><div><a href="#">Opções</a></div></li>
+                            <li><div><a href="#">Mini-Índice</a></div></li>
+                            <li><div><a href="#">Minidolar</a></div></li>
+                            <li><div><a href="#">Contrato de Dolar</a></div></li>
+                            <li><div><a href="#">Contrato de Índice</a></div></li>
+                            <li><div><a href="#">Alavancagem Bovespa</a></div></li>
+                        </ul>
+                    </div>
+                    <div class="listInvest">
+                        <ul>
+                            <h3>Renda Fixa e Renda variável</h3>
+                            <li><div><a href="#">Fundos de investimentos</a></div></li>
+                            <li><div><a href="#">ETF</a></div></li>
+                            <li><div><a href="#">COE</a></div></li>
+                            <li><div><a href="#">Ofertas Públicas</a></div></li>
+                        </ul>
+                    </div>
+                    <div class="listInvest">
+                        <ul>
+                            <h3>Ferramentas Trader</h3>
+                            <li><div><a href="#"> Espaço Trader</a></div></li>
+                            <li><div><a href="#">Todos os investimentos</a></div></li>
+                        </ul>    
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">Preços</a></li>
+            <li><a href="#">InvestNews</a></li>
+            <li><a href="">&nbsp;</a></li>
+        </ul>
+        </section>
+        
         <header class="NuInvest" id="Nuinvest">
             <div class="headerposition">
                 <h1>NuInvest</h1>
@@ -85,14 +145,14 @@
                     <h1 class="txth1"><b class="txtb">Zero corretagem</b><br>O jeito mais fácil de investir na Bolsa: em aplenas três cliques.</h2>
                         <div class="linha"><a href="#"><div class="textImg">Invista em ações com taxa zero <img src="imagens/ArrowPurple.svg" alt=""></div><hr></a></div>
                     </div>
-                <img src="imagens/homem_usando_aplicativo.webp" alt="">
+                <img src="imagens/homem_usando_aplicativo.webp" class="imgsection" alt="">
             </div>
 
         </section>
 
         <section id="Ultravioleta">
             <div class="arrumarA">
-                    <img src="imagens/home_mockup_uv.webp" id="cell" alt="">
+                    <img src="imagens/home_mockup_uv.webp" class="imgsection" id="cell" alt="">
                     <div class="text">
                         <h1 class="txth1"><b class="txtb">Fundos Nu Ultravioleta</b><br>Uma seleção sofisitcada de fundos a partir de R$100.</h1>
                         <div class="linha"><a href="#"><div class="textImg">Sem taxa de administração <img src="imagens/ArrowPurple.svg" alt=""></div><hr></a></div>
@@ -148,7 +208,7 @@
 
         <section id="Carteiras">
             <div class="arrumarA">
-                <img src="imagens/mulher_celular.webp" id="Mulhercell" alt="">
+                <img src="imagens/mulher_celular.webp" class="imgsection" alt="">
                 <div class="text">
                     <h1><b>Carteiras Recomendadas</b></h1>
                     <h2>Análises de especialistas para você tomar as melhores decisões de investimento.</h2>
@@ -162,7 +222,7 @@
                     <h1><b>Plataformas para trader</b><br>Gráficos, recursos rápidos e dados em tempo real</h1>
                     <div class="linha"><a href="#"><div class="textImg">Saiba mais <img src="imagens/ArrowPurple.svg" alt=""></div><hr></a></div>
                 </div>
-                <img src="imagens/home_trader_photo.webp" id="notebook" alt="">
+                <img src="imagens/home_trader_photo.webp" class="imgsection" id="notebook" alt="">
             </div>
         </section>
 
