@@ -256,9 +256,10 @@ transition: linear 0.5s;
     flex-direction: column;
 }
 .dropmenu button{
-    padding: 1.1em;
+    padding: 3vh;
     display: flex;
     width: 100%;
+    font-family: 'GraphikRegular';
     text-align: start;
     font-weight: 800;
     font-size: 1em;
@@ -614,48 +615,35 @@ section{
         font-size: 1em;
     }
 }
-
 @media (max-width: 980px) {
-
-    body{
-        width: 10vw;
-    }
-    
     .navBar{
         width: 100vw;
         height: 10vh;
     }
-
     .menulist{
         margin-top: 10vh;
     }
-    
     header{
         width: 100vw;
         font-size: 0.6em;
     }
-    
     section{
         font-size: 0.6em;
     }
-
     .headerposition h1{
         font-size: 3.5em;
     }
-
     .arrumar{
         flex-direction: column;
     }
     .arrumarA{
         flex-direction: column-reverse;
     }
-    
     .arrumar, .arrumarA{
         font-size: 0.8em;
         align-items: flex-start;
         justify-content: center;
     }
-
     .text h1{
         width: 80vw;
     }
@@ -666,33 +654,24 @@ section{
     .text a{
         font-size: 2em;
     }
-
     #Opoder a{
         font-size: 1.6em;
     }
-
-
    #Zero img, #Ultravioleta img, #Carteiras img{
         height: 45%;
     }
-
     #Mil{
         width: 100vw;
     }
-
     #Mil b, #Mil h1{
         font-size: 2em;
     }
-
     .carrossel{
         height: 35%;
     }
-
-
     .carrossel h1{
         font-size: 2em;
     }
-
     #notebook{
         margin-top: 20px;
         height: 35%;
